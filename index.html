@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardians | Sea Life Conservation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f4fbff;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 70, 120, 0.7), rgba(0, 70, 120, 0.7)),
+                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80')
+                        center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 700px;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #00bcd4;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0097a7;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #005f73;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .impact {
+            background: #caf0f8;
+            text-align: center;
+        }
+
+        .impact h2 {
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            font-size: 2rem;
+            color: #023e8a;
+        }
+
+        footer {
+            background: #023047;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ocean Guardians</h1>
+        <p>
+            Protecting marine ecosystems, preserving biodiversity,
+            and inspiring communities to conserve our oceans for future generations.
+        </p>
+        <a href="#join" class="btn">Join the Mission</a>
+    </header>
+
+    <section>
+        <div class="section-title">
+            <h2>Why Sea Life Matters</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🐢 Marine Biodiversity</h3>
+                <p>
+                    Oceans host millions of species that maintain ecological balance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌊 Healthy Oceans</h3>
+                <p>
+                    Marine ecosystems regulate climate and produce much of Earth's oxygen.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>♻️ Reduce Pollution</h3>
+                <p>
+                    Reducing plastic waste helps protect marine animals from harm.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h2>Our Conservation Impact</h2>
+
+        <div class="stats">
+            <div>
+                <div class="stat">500+</div>
+                <p>Beach Cleanups</p>
+            </div>
+
+            <div>
+                <div class="stat">100K+</div>
+                <p>Marine Species Protected</p>
+            </div>
+
+            <div>
+                <div class="stat">50+</div>
+                <p>Community Programs</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="section-title">
+            <h2>How You Can Help</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Volunteer</h3>
+                <p>Participate in beach cleanups and conservation activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Donate</h3>
+                <p>Support projects that restore marine habitats.</p>
+            </div>
+
+            <div class="card">
+                <h3>Educate Others</h3>
+                <p>Spread awareness about sustainable ocean practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ocean Guardians | Together, We Protect Our Oceans 🌎</p>
+    </footer>
+
+</body>
+</html>
